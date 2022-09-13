@@ -6,8 +6,8 @@
 														  <!-- [UPDATE] Suppression de TOUTES les références à Paris, parfois remplacées par Lyon-->
 		<meta name="description" content="La Panthère a pour but d'offrir à ses partenaires le meilleur du web design"> <!--Ajout de contenu-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		<link rel="shortcut icon" type="image/jpg" href="favicon.jpg"> <!-- [UPDATE] type d'image corrigé-->
-		<link rel="icon" type="image/jpg" href="favicon.jpg"> <!-- [UPDATE] ajout d'une "rel" non propriétaire-->
+		<link rel="shortcut icon" type="image/jpg" href="./img/favicon.jpg"> <!-- [UPDATE] type d'image corrigé-->
+		<link rel="icon" type="image/jpg" href="./img/favicon.jpg"> <!-- [UPDATE] ajout d'une "rel" non propriétaire-->
 
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="./css/style.css"> <!-- [UPDATE] Fichier déplacé dans le dossier CSS et liens refaits (images etc) -->
@@ -214,9 +214,12 @@
 				<!-- bloc-4-portfolio END -->
 
 				<!-- bloc-5-cta -->
-				<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
-					<div class="container bloc-lg">
-						<div class="row">
+
+				<!-- [UPDATE] Suggestion: Ajouter un fond au texte car il n'est pas clairement visible-->
+
+				<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper">
+					<div class="container bloc-lg ">
+						<div class="row" >
 							<h2 class="mg-md text-center tc-white">
 								Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 							</h2>
@@ -229,7 +232,8 @@
 				<!-- bloc-5-cta END -->
 			</main>
 			<!-- Footer - bloc-8 -->
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<!-- [UPDATE] supression d'ID-->
+			<footer class="bloc bgc-atomic-tangerine d-bloc">
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
@@ -257,7 +261,7 @@
 										<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 									</div>
 								</div>
-								<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+								<!-- [UPDATE] Suppression d'une div non conforme (keywords)-->
 							</div>
 							<div class="row">
 								<div class="col-sm-4">
@@ -270,6 +274,7 @@
 										</ul>		
 								</div>
 								<div class="col-sm-4">
+									<!-- [UPDATE] Quelle est la fonction de cette liste ??? -->
 									Annuaires liste 1
 									<ul>
 										<li><a href="annuaireagence.com">annuaireagence.com</a></li>
@@ -301,7 +306,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 			<!-- Footer - bloc-8 END -->
 
 		</div>
