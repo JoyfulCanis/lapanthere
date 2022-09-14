@@ -772,7 +772,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #f3976c;
 }
 
 .tc-white {
@@ -823,7 +823,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
+    background-image: url("../img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1040,4 +1040,22 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+/*modifications*/
+.col-sm-4{
+    color: rgb(0, 0, 0);
+}
+
+ul{
+    list-style: none;
+
+}
+
+.col-sm-4 ul{
+    margin-left: -40px;
+}
+
+.col-sm-4 ul li a{
+    color: rgb(0, 0, 0) !important;
 }
