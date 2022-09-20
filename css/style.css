@@ -1042,7 +1042,7 @@ h4 {
     }
 }
 
-/*modifications*/
+/*-------------------MODIFICATIONS-----------------------------*/
 .col-sm-4{
     color: rgb(0, 0, 0);
 }
@@ -1058,4 +1058,23 @@ ul{
 
 .col-sm-4 ul li a{
     color: rgb(0, 0, 0) !important;
+}
+
+.section-2__title h2, .section-3__title h2{
+    text-align: center;
+    width: 620px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.section-3__title h2{
+    width: 450px;
+}
+
+.section-2__text, .section-3__text, .section-2__quote-text, .section-4__text{
+    font-size: 14px;
+}
+
+.footer__text{
+    font-size: 14px;
+    padding-bottom: 20px;
 }
