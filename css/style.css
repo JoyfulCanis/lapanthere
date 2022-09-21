@@ -754,7 +754,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -1059,7 +1059,9 @@ ul{
 .col-sm-4 ul li a{
     color: rgb(0, 0, 0) !important;
 }
-
+.nav-link:hover{
+    color: #c56436 !important;
+}
 .section-2__title h2, .section-3__title h2{
     text-align: center;
     width: 620px;
@@ -1072,9 +1074,66 @@ ul{
 
 .section-2__text, .section-3__text, .section-2__quote-text, .section-4__text{
     font-size: 14px;
+    font-weight: 500;
+}
+.section-2__text, .section-2__quote-text, .section-4__text{
+    color: #000000 !important;
 }
 
 .footer__text{
     font-size: 14px;
     padding-bottom: 20px;
+}
+
+.gallery-link, .gallery-link__img{
+    margin: auto;
+    max-width: 270px;
+}
+
+input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid rgba(255, 0, 0, 0.588);
+    border-radius: 5px;
+}
+
+input:valid {
+    border-radius: 5px;
+    background-color: rgba(7, 253, 7, 0.181);
+  }
+
+.contact-page-title-color{
+    color: white !important;
+}
+
+.contact-page-text-color{
+    color: white !important;
+    font-size: 16px;
+}
+
+
+.form-group{
+    padding-bottom: 14px;
+    margin: auto;
+}
+
+.form-width{
+    max-width: 460px;
+
+}
+
+.form-first-bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-how-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.pre-footer-background-width{
+    width: 600px;
+    margin: auto;
 }
