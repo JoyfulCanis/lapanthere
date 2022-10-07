@@ -2,59 +2,62 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="keywords" content="">
-		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
-		
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-		
+		<!-- Website page informations --> 
+		<meta name="keywords" content="agence webdesign, lyon, contact">
+		<meta name="description" content="Page de contact du site de web design La Panthère">
 		<title>La Panthère-Contact</title>
-
+		<!-- Website page informations END -->
 		
-	<!-- Analytics -->
-	
-	<!-- Analytics END -->
+		<!-- Icon -->
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+		<!-- Icon END -->
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+		<!-- CSS END -->
+
+			
 		
 	</head>
-	<!-- Principal conteneur -->
-		<div class="page-container">
+	<body class="page-container">
 			
-		<!-- bloc-0 -->
+		<!-- Header -->
 		<header class="bloc bgc-white l-bloc " id="bloc-0">
 			<div class="container bloc-sm">
+				<!-- Navigation -->
 				<nav class="navbar row">
+					<!-- Burger Menu-->
 					<div class="navbar-header">
-						<!-- [UPDATE] Suppression de deux div pouvant s'apparenter à des méthodes black hat-->
 						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Image du logo de l'agence web La Panthère"/></a>
-						<!-- [UPDATE] Remplacement du contenu de l'attribut 'alt' pour améliorer l'accessibilité et éviter les associations aux pratiques black hat -->
-						<!--[UPDATE] données "height" déplacées dans le CSS-->
-						<button type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1"> <!-- [UPDATE] Supression de l'ID et du texte 'Toggle'-->
-							<span class="sr-only">toggle navigation</span> <!--REMETTRE TOGGLE-->
+						<button type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+							<span class="sr-only">toggle navigation</span>
+							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
 					</div>
+					<!-- Burger Menu END-->
 					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 						<ul class="site-navigation nav navbar-nav">
 							<li>
 								<a href="index.html">Accueil</a>
 							</li>
-							<!-- [UPDATE] Suppression d'une balise li inutile-->
 							<li>
-								<a href="contact.html">Contact</a> <!-- [UPDATE] "page 2" modifié par "contact" plus approprié-->
+								<a href="contact.html">Contact</a>
 							</li>
 						</ul>
 					</div>
 				</nav>
+				<!-- Navigation END -->
 			</div>
 		</header>
-		<!-- bloc-0 END -->
+		<!-- Header END -->
 		<main>
-		<!-- bloc-6 -->
+		<!-- Front section -->
 			<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper ">
 				<div class="container bloc-lg ">
 					<div class="row">
@@ -70,106 +73,107 @@
 					</div>
 				</div>
 			</section>
-			<!-- bloc-6 END -->
+			<!-- Front section END -->
 
-			<!-- bloc-7 -->
+			<!-- Contact form -->
 			<section class="bloc bgc-white l-bloc" id="bloc-7">
 				<div class="container bloc-lg">
-					<div class="row">
+					<div class="contact-column">
 						<div class="col-sm-6">
 							<form id="form_1" class="form-width" novalidate success-msg="Votre message a été envoyé" fail-msg="Désolé, mais il semblerait que notre serveur ne réponde pas. Navrés pour l'incommodité.">
-								<div class="form-first-bloc"> <!-- [UPDATE] Traduction-->
+								<div class="form-first-bloc">
 									<div class="form-group">
-										<label>
+										<label for="name">
 											Nom
 										</label>
 										<input id="name" class="form-control" required />
 									</div>
 									<div class="form-group">
-										<label>
+										<label for="email">
 											Adresse email
 										</label>
 										<input id="email" class="form-control" type="email" required />
 									</div>
 								</div>
 								<div class="form-group form-how-flex">
-									<label>
+									<label for="how">
 										Comment nous avez-vous connu ?
 									</label>
-									<input class="form-control" type="text" required id="input_504" />
+									<input class="form-control" type="text" required id="how" />
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="message">
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									</label>
 									<textarea id="message" class="form-control" rows="8" cols="60" required></textarea>
 								</div> 
-								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine button-send-color" type="submit">
 									Envoyer
 								</button>
 							</form>
 						</div>
-						<div class="col-sm-6">
-							<p>
-								contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi.<br>
-							</p>
-						</div>
 					</div>
 				</div>
 			</section>
-			<!-- bloc-7 END -->
+			<!-- Contact form END -->
 
 			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<button type="button"  id="al" aria-label="Haut de la page" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></button>
 			<!-- ScrollToTop Button END-->
 
 		</main>
-		<!-- Footer - bloc-8 -->
+		<!-- Footer -->
 		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
-							Agence La Panthère - Agence web basée à Lyon.<br>
+						<p class="text-center white footer__text">
+							Agence La Panthère - Agence web basée à Lyon<br>
 						</p>
+						<!-- Social Network Icons -->
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a class="social" href="index.html" title="twitter"><span class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a class="social" href="index.html" title="facebook"><span class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									<a class="social" href="index.html" title="dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+									<a class="social" href="index.html" title="instagram"><span class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
+						</div>
+						<!-- Social Network Icons END -->
+						<div class="adress-container">
+							<address class="contact-adress-index">
+								contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+							</address>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<!-- Footer - bloc-8 END -->
+		<!-- Footer END -->
 
-		</div>
-	<!-- Principal conteneur END -->
-	<!--Mis en dernier pour éviter les erreurs fatales-->
-		<script src="./js/jquery-2.1.0.min.js"></script>
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/blocs.min.js"></script>
-		<script src="./js/jqBootstrapValidation.js"></script>
-		<script src="./js/formHandler.js"></script>
+	
+	
+		<!-- Scripts at the end (to avoid fatal errors)-->
+		<script src="./js/jquery-2.1.0-min.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/blocs.js"></script>
 		<script src="./js/jquery.touchSwipe.js" defer></script>
 		<script src="./js/gmaps.js"></script>
-
+		<script src="./js/jqBootstrapValidation-7.js"></script>
+		<script src="./js/formHandler.js"></script>
 	</body>
 </html>
